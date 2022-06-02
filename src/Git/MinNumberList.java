@@ -1,8 +1,6 @@
 package Git;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
+import java.util.*;
 
 /**
  * Создать новый проект.
@@ -17,7 +15,15 @@ public class MinNumberList {
     }
 
     public static void main(String[] args) {
-
+        List<Integer> list = new ArrayList<>();
+        Random generator = new Random();
+        for (int i = 0; i < 10; i++) {
+            list.add(generator.nextInt(100));
+        }
+        System.out.println(list);
+        for (Integer number: list){
+            System.out.println(number);
+        }
     }
 
 }
