@@ -16,5 +16,9 @@ public class MinNumberList {
        return Collections.min(list);
     }
 
+    public static void main(String[] args) {
+
+    }
+
 }
 
