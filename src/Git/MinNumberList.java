@@ -10,7 +10,7 @@ import java.util.*;
  */
 public class MinNumberList {
 
-   public Integer minList(ArrayList<Integer> list){
+   static Integer minList(List<Integer> list){
        return Collections.min(list);
     }
 
@@ -21,9 +21,7 @@ public class MinNumberList {
             list.add(generator.nextInt(100));
         }
         System.out.println(list);
-        for (Integer number: list){
-            System.out.println(number);
-        }
+        System.out.println("min = " + minList(list));
     }
 
 }
